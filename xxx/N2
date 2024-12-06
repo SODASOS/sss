@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int *p = &n;
+    cout << (*p > 0 ? "БОЛЬШЕ НУЛЯ " : *p < 0 ? "МЕНЬШЕ НУЛЯ" : "РАВНО НОЛЬ");
+    return 0;
+}
