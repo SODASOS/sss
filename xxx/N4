@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, *p1 = &a, *p2 = &b, res, *pRes = &res;
+    char op;
+    cin >> *p1 >> op >> *p2;
+    if (op == '+') *pRes = *p1 + *p2;
+    else if (op == '-') *pRes = *p1 - *p2;
+    else if (op == '*') *pRes = *p1 * *p2;
+    else if (op == '/') *pRes = *p1 / *p2;
+    cout << *pRes;
+    return 0;
+}
